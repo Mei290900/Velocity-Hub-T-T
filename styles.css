@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Sorts Mill Goudy", serif;
+}
+
+.vhNav {
+  background: #3c5649;
+  min-height: 90px;
+}
+.vhNav .vhCf {
+  padding: 0 30px;
+}
+.vhNav .vhCf a {
+  color: #ff998d;
+}
+.vhNav .vhCf .vhCollapse ul li a {
+  color: #ff998d;
+}
+
+.carousel .carousel-inner .carousel-item img {
+  width: 100%;
+  height: 670px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (min-width: 375px) and (max-width: 667px) {
+  .carousel .carousel-inner .carousel-item .carousel-item img {
+    width: 100%;
+    height: auto;
+  }
+}
+.carousel .carousel-inner .carousel-item .carousel-caption {
+  top: 50%;
+  /* optional reset for presentation */
+}
+.carousel .carousel-inner .carousel-item .carousel-caption h1 {
+  font-size: 65px;
+  color: #3c5649;
+}
+.carousel .carousel-inner .carousel-item .carousel-caption .button {
+  display: inline-block;
+  padding: 0.75rem 1rem;
+  border-radius: 10rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.15rem;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.carousel .carousel-inner .carousel-item .carousel-caption .button:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #3c5649;
+  border-radius: 10rem;
+  z-index: -2;
+}
+.carousel .carousel-inner .carousel-item .carousel-caption .button:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #1d2923;
+  transition: all 0.3s;
+  border-radius: 10rem;
+  z-index: -1;
+}
+.carousel .carousel-inner .carousel-item .carousel-caption .button:hover {
+  color: #fff;
+}
+.carousel .carousel-inner .carousel-item .carousel-caption .button:hover:before {
+  width: 100%;
+}
+.carousel .carousel-inner .carousel-item .carousel-caption .button-container {
+  padding-top: 50px;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+.carousel .carousel-inner .carousel-item .carousel-caption a {
+  font-size: 0.7rem;
+  color: #999;
+}
+.carousel .carousel-inner .carousel-item .colorChange {
+  font-size: 65px;
+  color: #ff998d;
+}
+.carousel .carousel-inner .carousel-caption {
+  opacity: 0; /* Initially hide the caption */
+  transition: opacity 0.3s ease-in-out; /* Smooth transition */
+}
+.carousel .carousel-item:hover {
+  filter: brightness(0.7); /* Darken the image */
+}
+.carousel .carousel-item:hover .carousel-caption {
+  opacity: 1; /* Show the caption on hover */
+}/*# sourceMappingURL=styles.css.map */
