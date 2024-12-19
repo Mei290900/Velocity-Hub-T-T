@@ -124,15 +124,12 @@
         margin-top: 100px;
         .row{
             padding: 7rem;
-            .gridCol{
-                .gridText{
+            .col-md-6{                
                     h2{
                         font-style: italic;
                         background-color: black;
-                    }
-                }
-                .gridCol-2{
-                    .gridPic{
+                    }                
+                .col-md-6{                    
                         img{
                             max-width: 100%;
                             height: auto;
@@ -142,4 +139,4 @@
             }
         }
     }
-}
+
