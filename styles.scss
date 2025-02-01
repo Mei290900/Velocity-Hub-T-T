@@ -5,6 +5,26 @@ $color: #3c5649;
     font-family: "Sorts Mill Goudy", serif;   
     
 }
+
+//logo
+
+.logo-section{
+    padding-top: 10px;
+    .img-container{        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+        width: 330px;
+        height: 170px;
+        }
+    }
+    h3{
+        padding: 10px 20px;
+        text-align: center;
+    }
+
+}
 // nav-bar-css
 .vhNav{
     background: #3c5649;
@@ -37,14 +57,21 @@ $color: #3c5649;
         .carousel-item{
             img{
             width: 100%;
-            height: 670px;
+            height: auto;
+            max-height: 670px;
             object-fit: cover;
             }
-            @media (min-width:375px) and (max-width: 667px)  {
+            @media (max-width: 768px)  {
                 .carousel-item {
                     img{
-                    width: 100%;
-                    height: auto;
+                        height: 50vh;
+                    }
+                }
+            }
+            @media (max-width: 576px)  {
+                .carousel-item {
+                    img{                    
+                    height: 40vh;
                     }
                 }
             }
@@ -157,9 +184,9 @@ $color: #3c5649;
     background-color: #3c5649; 
     padding-top: 4rem;
     padding-bottom: 2rem;
-    .row{  
+    .row{
         .card1{
-            max-height: 480px;
+            max-height: auto;
             background: rgba(255, 255, 255, 0.2);  /* Semi-transparent white background */
             border-radius: 15px;  /* Rounded corners */
             backdrop-filter: blur(10px);  /* Apply the blur effect */
@@ -169,6 +196,10 @@ $color: #3c5649;
             padding: 20px;
             transition: transform 0.6s ease-in-out;  /* Smooth transition */
             object-fit: cover;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin-bottom: 20px; /* Add spacing between rows */
+            margin-right: 10px;  /* Add spacing between cards (optional) */
             .card-img{
                 padding-top: 10px;  
                 img{
@@ -181,6 +212,12 @@ $color: #3c5649;
             transform: scale(1.1);
         }
         
+    }
+    @media (max-width: 577px) and (min-width: 375px) {
+        .row{
+            display: flex;
+            justify-content: center;
+        }
     }
 }
 
