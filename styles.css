@@ -17,6 +17,12 @@
 .vhNav .vhCf .vhCollapse ul li a {
   color: #ff998d;
 }
+.vhNav .vhCf .vhCollapse ul li a:hover {
+  color: #ffd5d0;
+  text-decoration: underline;
+  padding-top: 1px;
+  transition: color 0.5s ease;
+}
 
 .carousel .carousel-inner .carousel-item img {
   width: 100%;
@@ -39,8 +45,8 @@
   color: #3c5649;
 }
 .carousel .carousel-inner .carousel-item .carousel-caption .button {
-  display: inline-block;
   padding: 0.75rem 1rem;
+  display: inline-block;
   border-radius: 10rem;
   color: #fff;
   text-transform: uppercase;
@@ -69,7 +75,6 @@
   left: 0;
   width: 0%;
   height: 100%;
-  background-color: #1d2923;
   transition: all 0.3s;
   border-radius: 10rem;
   z-index: -1;
@@ -103,4 +108,126 @@
 }
 .carousel .carousel-item:hover .carousel-caption {
   opacity: 1; /* Show the caption on hover */
+}
+
+.gridSystem {
+  background-color: #3c5649;
+}
+.gridSystem .gridContainer .row {
+  margin-top: 1rem;
+  padding-top: 3rem;
+}
+.gridSystem .gridContainer .row .col-md-6 {
+  padding: 2.5rem;
+}
+.gridSystem .gridContainer .row .col-md-6 img {
+  transition: transform 0.6s ease-in-out; /* Smooth transition */
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 100%;
+  height: auto;
+}
+.gridSystem .gridContainer .row .col-md-6 img:hover {
+  transform: scale(1.1);
+}
+
+.card {
+  border: 0;
+  outline: 0;
+  background-color: #3c5649;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+}
+.card .row .card1 {
+  max-height: 480px;
+  background: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
+  border-radius: 15px; /* Rounded corners */
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px); /* Apply the blur effect */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Optional light border for depth */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for a floating effect */
+  color: #fff; /* Optional: Text color for visibility */
+  padding: 20px;
+  transition: transform 0.6s ease-in-out; /* Smooth transition */
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.card .row .card1 .card-img {
+  padding-top: 10px;
+}
+.card .row .card1 .card-img img {
+  width: 100%;
+  height: auto;
+}
+.card .row .card1:hover {
+  transform: scale(1.1);
+}
+
+.footer {
+  background: #3c5649;
+  padding-bottom: 50px;
+  padding-top: 80px;
+  margin-top: 1rem;
+}
+
+.footer_menu {
+  margin-bottom: 20px;
+}
+
+.footer_menu ul {
+  list-style: none;
+  text-align: center;
+}
+
+.footer_menu ul li {
+  display: inline-block;
+}
+
+.footer_menu ul li a {
+  color: #fff;
+  padding: 0 10px;
+  transition: 0.3s;
+}
+
+.footer_menu ul li a:hover {
+  color: #ff998d;
+}
+
+/*START FOOTER SOCIAL DESIGN*/
+.footer_profile {
+  margin-bottom: 40px;
+}
+
+.footer_profile ul {
+  list-style: outside none none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer_profile ul li {
+  display: inline-block;
+}
+
+@media only screen and (max-width: 480px) {
+  .footer_profile ul li {
+    margin: 2px;
+  }
+}
+.footer_profile ul li a img {
+  width: 60px;
+}
+
+.footer_profile ul li a img {
+  width: auto;
+  height: 40px;
+  padding: 0 10px;
+}
+
+.footer_copyright {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: #fff;
 }/*# sourceMappingURL=styles.css.map */
