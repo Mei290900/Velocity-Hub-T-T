@@ -136,7 +136,6 @@
   background-color: #3c5649;
 }
 .gridSystem .gridContainer .row {
-  margin-top: 1rem;
   padding-top: 3rem;
 }
 .gridSystem .gridContainer .row .col-md-6 {
@@ -199,7 +198,6 @@
   background: #3c5649;
   padding-bottom: 50px;
   padding-top: 80px;
-  margin-top: 1rem;
 }
 
 .footer_menu {
